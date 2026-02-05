@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Sound Service - Sound System Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .service {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .booking-form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e55a00;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>राधे राधे जी आपका केशव साउंड सर्विस में स्वागत है</h1>
+        <p>किसी भी प्रकार के साउंड सिस्टम के लिए संपर्क करें। श्री भागवत कथा, राम कथा, भजन, संध्या, रासलीला आदि के लिए जोड़ें।</p>
+        <p>मालिक: लक्ष्मण शर्मा</p>
+    </header>
+
+    <div class="container">
+        <section class="services">
+            <div class="service">
+                <h3>भागवत कथा</h3>
+                <p>उच्च गुणवत्ता वाला साउंड सिस्टम भगवत कथा के लिए उपलब्ध।</p>
+            </div>
+            <div class="service">
+                <h3>राम कथा</h3>
+                <p>राम कथा के लिए स्पष्ट और शक्तिशाली साउंड सिस्टम।</p>
+            </div>
+            <div class="service">
+                <h3>भजन और संध्या</h3>
+                <p>भजन और संध्या कार्यक्रमों के लिए आदर्श साउंड सेवाएं।</p>
+            </div>
+            <div class="service">
+                <h3>रासलीला</h3>
+                <p>रासलीला के लिए मनोरंजक साउंड सिस्टम।</p>
+            </div>
+        </section>
+
+        <section class="booking-form">
+            <h2>प्रोग्राम बुक करें</h2>
+            <form action="#" method="post"> <!-- Replace # with actual backend endpoint if needed -->
+                <label for="name">नाम:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">फोन नंबर:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">ईमेल (वैकल्पिक):</label>
+                <input type="email" id="email" name="email">
+
+                <label for="program">प्रोग्राम प्रकार:</label>
+                <select id="program" name="program" required>
+                    <option value="">चुनें</option>
+                    <option value="bhagwat-katha">भगवत कथा</option>
+                    <option value="ram-katha">राम कथा</option>
+                    <option value="bhajan">भजन</option>
+                    <option value="sandhya">संध्या</option>
+                    <option value="raslila">रासलीला</option>
+                    <option value="other">अन्य</option>
+                </select>
+
+                <label for="date">तारीख:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="details">अतिरिक्त विवरण:</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+
+                <button type="submit">बुक करें</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>संपर्क: लक्ष्मण शर्मा, केशव साउंड सर्विस | फोन: [आपका फोन नंबर डालें] | ईमेल: [आपका ईमेल डालें]</p>
+    </footer>
+
+    <script>
+        // Basic form validation (optional enhancement)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('धन्यवाद! आपका बुकिंग अनुरोध प्राप्त हो गया है। हम जल्द ही संपर्क करेंगे।');
+            // Here you can add code to send data to a server
+        });
+    </script>
+</body>
+</html>

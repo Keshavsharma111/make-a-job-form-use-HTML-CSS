@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:0;
+}
+h1{
+    background-color: blueviolet;
+    color:brown;
+    text-align: center;
+}
+ul{
+    background-color:black;
+}
+ul li{ 
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+ul li :hover{
+    background-color :chartreuse;
+
+}

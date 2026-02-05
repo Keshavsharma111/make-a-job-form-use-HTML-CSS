@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Box Reveal</title>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f7e9ff;
+        font-family: Arial;
+    }
+
+    /* Gift Box Container */
+    .gift-container {
+        position: relative;
+        width: 200px;
+        cursor: pointer;
+        transition: 0.4s;
+        text-align: center;
+    }
+
+    /* Box Base */
+    .box {
+        width: 200px;
+        height: 150px;
+        background: #ff3b3b;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Box Lid */
+    .lid {
+        width: 220px;
+        height: 60px;
+        background: #ff6b6b;
+        border-radius: 5px;
+        position: absolute;
+        top: -40px;
+        left: -10px;
+        transition: 0.5s ease-in-out;
+        transform-origin: bottom;
+    }
+
+    /* Ribbon */
+    .ribbon {
+        width: 30px;
+        height: 150px;
+        background: yellow;
+        position: absolute;
+        left: 85px;
+        border-radius: 5px;
+    }
+
+    /* Image reveal box */
+    .image-box {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .image-box img {
+        width: 180px;
+        display: block;
+        margin: auto;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="gift-container" onclick="openGift()">
+    <div class="lid" id="lid"></div>
+    <div class="box"></div>
+    <div class="ribbon"></div>
+</div>
+
+<div class="image-box" id="imageBox">
+    <img src="image.png" alt="Kinder Joy">
+</div>
+
+<script>
+function openGift() {
+    document.getElementById("lid").style.transform = "rotateX( -120deg )";
+    document.getElementById("imageBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>

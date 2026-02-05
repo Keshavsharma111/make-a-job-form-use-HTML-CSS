@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Sound Service - Sound System Booking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #e55a00;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color:white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400?text=Sound+System+Services'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: rgb(199, 30, 30);
+            text-align: center 
+            
+             ;
+            padding: 100px 20px;
+            margin-bottom: 40px;
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .service {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .service img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .booking-form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        button:hover {
+            background-color: #e55a00;
+        }
+        .about, .gallery {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>राधे राधे जी आपका केशव साउंड सर्विस में स्वागत है</h1>
+        <p>किसी भी प्रकार के साउंड सिस्टम के लिए संपर्क करें। श्री  भागवत कथा, राम कथा, भजन, संध्या, रासलीला आदि के लिए जोड़ें।</p>
+        <p>मालिक: लक्ष्मण शर्मा</p>
+        <h5>9412801705</h5>
+    </header>
+
+    <nav>
+        <a href="#home">होम</a>
+        <a href="#services">सेवाएं</a>
+        <a href="#booking">बुकिंग</a>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#gallery">गैलरी</a>
+        <a href="#contact">संपर्क</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>उच्च गुणवत्ता वाले साउंड सिस्टम सेवाएं</h2>
+        <p>आपके कार्यक्रमों को यादगार बनाने के लिए हमारी विशेषज्ञ सेवाएं।</p>
+    </div>
+
+    <div class="container">
+        <section class="services" id="services">
+            <div class="service">
+                <img src="bagwat-katha.jpg" alt="भगवत कथा"> <!-- Replace with actual image -->
+                <h3>भागवत कथा</h3>
+                <p>उच्च गुणवत्ता वाला साउंड सिस्टम भगवत कथा के लिए उपलब्ध।</p>
+            </div>
+            <div class="service">
+                <img src="ram-katha.png" alt="राम कथा"> <!-- Replace with actual image -->
+                <h3>राम कथा</h3>
+                <p>राम कथा के लिए स्पष्ट और शक्तिशाली साउंड सिस्टम।</p>
+            </div>
+            <div class="service">
+                <img src="Bhajansandya.jpg" alt="भजन और संध्या"> <!-- Replace with actual image -->
+                <h3>भजन और संध्या</h3>
+                <p>भजन और संध्या कार्यक्रमों के लिए आदर्श साउंड सेवाएं।</p>
+            </div>
+            <div class="service">
+                <img src="raslila.jpg" alt="रासलीला"> <!-- Replace with actual image -->
+                <h3>रासलीला</h3>
+                <p>रासलीला के लिए मनोरंजक साउंड सिस्टम।</p>
+            </div>
+        </section>
+
+        <section class="booking-form" id="booking">
+            <h2>प्रोग्राम बुक करें</h2>
+            <form action="#" method="post"> <!-- Replace # with actual backend endpoint if needed -->
+                <label for="name">नाम:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">फोन नंबर:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">ईमेल (वैकल्पिक):</label>
+                <input type="email" id="email" name="email">
+
+                <label for="program">प्रोग्राम प्रकार:</label>
+                <select id="program" name="program" required>
+                    <option value="">चुनें</option>
+                    <option value="bhagwat-katha">भगवत कथा</option>
+                    <option value="ram-katha">राम कथा</option>
+                    <option value="bhajan">भजन</option>
+                    <option value="sandhya">संध्या</option>
+                    <option value="raslila">रासलीला</option>
+                    <option value="other">अन्य</option>
+                </select>
+
+                <label for="date">तारीख:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="details">अतिरिक्त विवरण:</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+
+                <button type="submit">बुक करें</button>
+            </form>
+        </section>
+
+        <section class="about" id="about">
+            <h2>हमारे बारे में</h2>
+            <p>केशव साउंड सर्विस एक विश्वसनीय सेवा प्रदाता है जो विभिन्न धार्मिक और सांस्कृतिक कार्यक्रमों के लिए उच्च गुणवत्ता वाले साउंड सिस्टम प्रदान करता है। हमारे मालिक लक्ष्मण शर्मा के नेतृत्व में, हम ग्राहकों की संतुष्टि को प्राथमिकता देते हैं।</p>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2>गैलरी</h2>
+            <img src="p3.jpg" alt="इवेंट 1"> <!-- Replace with actual images -->
+            <img src="p4.jpg"alt="इवेंट 2">
+            <img src="p8.jpg" alt="इवेंट 3">
+            <img src="p2.jpg" alt="इवेंट 4">
+        </section>
+    </div>
+
+    <footer id="contact">
+        <p>संपर्क: लक्ष्मण शर्मा, केशव साउंड सर्विस | फोन: [आपका फोन नंबर डालें] | ईमेल: <a href="mailto:[keshavsharma7180@gmail.com]]">[आपका ईमेल डालें]</a></p>
+        <p>&copy; 2023 केशव साउंड सर्विस. सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <script>
+        // Basic form validation and submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const program = document.getElementById('program').value;
+            const date = document.getElementById('date').value;
+            const details = document.getElementById('details').value;
+
+            if (name && phone && program && date) {
+                alert(`धन्यवाद ${name}! आपका बुकिंग अनुरोध प्राप्त हो गया है। हम जल्द ही संपर्क करेंगे।`);
+                // Here you can add code to send data to a server, e.g., via fetch() to an API
+                console.log({ name, phone, email, program, date, details }); // For debugging
+            } else {
+                alert('कृपया सभी आवश्यक फ़ील्ड भरें।');
+            }
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

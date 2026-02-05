@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Diwali</title>
+  <link rel="stylesheet" href="diwali.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="door"></div>
+    <div class="greeting">
+      <h1>Wishing You a Very Happy & Prosperous Deepawali</h1>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const door = document.querySelector('.door');
+      const greeting = document.querySelector('.greeting');
+
+      door.addEventListener('mouseenter', () => {
+        door.style.transform = 'rotateY(90deg)';
+        greeting.style.opacity = '1';
+        
+      });
+
+      door.addEventListener('mouseleave', () => {
+        door.style.transform = 'rotateY(0deg)';
+        greeting.style.opacity = '0';
+      });
+    });
+  </script>
+</body>
+</html>
